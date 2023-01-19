@@ -72,6 +72,16 @@
   margin: var(--size-100) var(--size-80);
 }
 
+@media screen and (max-width: 800px) {
+.concern { 
+  margin: var(--size-100) var(--size-100);
+}
+.line{ 
+opacity: 0.5; 
+}
+
+}
+
 /* Box sizing rules */
 
 *,
