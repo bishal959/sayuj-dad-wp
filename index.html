@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>homepage</title>
+    <link rel="icon" href="./images/logo.svg" />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/header.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+    <link rel="stylesheet" href="./css/utility-classes.css" />
+    <link rel="stylesheet" href="./css/sidebar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+
+    <script src="./js/language-changer.js" defer></script>
+    <script src="./js/dark-mode-toggle.js" defer></script>
+    <script src="./js/sidebar.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="header-left">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+          <p class="title-small">
+            Bajrashali Multipuprose Co-operative limited
+          </p>
+        </div>
+        <div class="header-right">
+          <a href="#">Home</a>
+          <a href="about.html">About</a>
+          <a href="contact.html">Contact</a>
+
+          <button id="sidebar-button" onclick="openSidebar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </section>
+      <div id="sidebar">
+        <button id="close-button" onclick="closeSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="sidebar-quick-links">
+          <ol role="list">
+            <li class="bold">Quick Links</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="./services/remittance.html">remittance</a></li>
+            <li><a href="./services/saving.html">Saving</a></li>
+          </ol>
+        </div>
+        <div class="site-settings">
+          <p class="title">Site Settings</p>
+          <div class="setting">
+            <label for="language_switch" class="label-text">Nepali</label>
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="language_switch"
+                onchange="switchLanguage()"
+                checked
+              />
+              <span class="slider round"></span>
+            </label>
+            <label for="language_switch" class="label-text">English</label>
+          </div>
+          <div class="setting">
+            <label for="dark-mode-toggle" class="label-text">Dark Mode</label>
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="dark-mode-toggle"
+                onclick="toggleDarkMode()"
+              />
+              <span class="slider round"></span>
+            </label>
+            <label for="dark-mode-toggle" class="label-text">Light Mode</label>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- -------------------------------------- English ----------------------------------- -->
+    <!-- -------------------------------------- English ----------------------------------- -->
+    <!-- -------------------------------------- English ----------------------------------- -->
+
+    <main id="en">
+      <section class="content">
+        <div class="intro-container">
+          <div class="intro-child">
+            <span class="title no-link">
+              <a href="./about.html"
+                ><span class="title-link-icon"
+                  ><i class="fa-solid fa-link"></i
+                ></span>
+                About Us</a
+              >
+            </span>
+            <p class="description">
+              We are a goodwill financial organization that provides a variety
+              of services to our customers such as savings and credit at
+              competitive rates. We can receive funds world wide and receive
+              within our own country. We are
+              <span class="bold">Sankhu's</span> oldest and most trusted
+              organization.
+            </p>
+          </div>
+          <div class="intro-child years-of-service">
+            <span class="number-tens">2</span>
+            <span class="number-ones">3</span>
+            <br />
+            <span class="service-text">Years Of Services</span>
+          </div>
+        </div>
+      </section>
+      <hr class="line" />
+      <section class="content">
+        <p class="title">Our Services</p>
+        <div class="services-container">
+          <div class="services">
+            <p class="title-small"><span class="lable">01</span> Deposit</p>
+            <p class="description">
+              We have various deposit options available to our customers for
+              their convenience and time savings.
+            </p>
+            <!-- <a href="./services/deposit.html" class="no-link">
+                <button class="learn-more">Learn More</button>
+              </a> -->
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="./images/temp.png" alt="Deposit" />
+            </div>
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="./images/temp.png" alt="" />
+            </div>
+          </div>
+          <div class="services">
+            <p class="title-small"><span class="lable">02</span> Loan</p>
+            <p class="description">
+              we have many loan options availabe for our customers like
+              education loan, agriculture loan, hire-purchase loan and much more
+              at competitive intrest rates.
+            </p>
+            <!-- <a href="./services/loan.html" class="no-link"
+                ><button class="learn-more">Learn More</button></a
+              > -->
+          </div>
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">03</span> Remittance Service
+            </p>
+            <p class="description">
+              We also have remittance service from which you can recieve money
+              world wide and recieve money within our country.
+            </p>
+            <a href="./services/remittance.html" class="no-link"
+              ><button class="learn-more">Learn More</button></a
+            >
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="remittance services" />
+            </div>
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="Saving and credit" />
+            </div>
+          </div>
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">04</span>Saving and credit
+            </p>
+            <p class="description">
+              We offer various saving options for our customers. easily save
+              your hard earned cash at competitive rates.
+            </p>
+            <a href="./services/saving.html" class="no-link"
+              ><button class="learn-more">learn more</button></a
+            >
+          </div>
+
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">05</span> Bills Payment
+            </p>
+            <p class="description">
+              You can easily pay your bills like electricity bills, water bills,
+              telephone bills easily and convinently with us
+            </p>
+            <!-- <a href="" class="no-link"
+                ><button class="learn-more">Learn More</button></a
+              > -->
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="bills Payment" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- -------------------------------------- Nepali----------------------------------- -->
+    <!-- -------------------------------------- Nepali----------------------------------- -->
+    <!-- -------------------------------------- Nepali----------------------------------- -->
+
+    <main id="np">
+      <section class="content">
+        <div class="intro-container">
+          <div class="intro-child">
+            <p class="title no-link">
+              <a href="./about.html"
+                ><span class="title-link-icon"
+                  ><i class="fa-solid fa-link"></i></span
+                >हाम्रो बारेमा</a
+              >
+            </p>
+            <p class="description">
+              हामी एक वित्तीय संस्था हौं जसले हाम्रा ग्राहकहरूलाई प्रतिस्पर्धी
+              दरहरूमा बचत र ऋण जस्ता विभिन्न सेवाहरू प्रदान गर्दछ। हामी देशको
+              कुनै पनि ठाउँमा पैसा पठाउन सक्क्षौ भने विश्वव्यापी रुप मा पैसा
+              प्राप्त पनि गर्न पनि सक्छौ। हामी
+              <span class="bold">साँखुको</span> सबैभन्दा पुरानो र भरपर्दो संस्था
+              हौं।
+            </p>
+          </div>
+          <div class="intro-child years-of-service">
+            <span class="number-tens">२</span>
+            <span class="number-ones">३</span>
+            <br />
+            <span class="service-text">वर्षदेखि सेवा प्रदान गर्दै </span>
+          </div>
+        </div>
+      </section>
+      <hr class="line" />
+      <section class="content">
+        <p class="title">Our Services</p>
+        <div class="services-container">
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">०१</span> निक्षेप सुविधा
+            </p>
+            <p class="description">
+              हामीले हाम्रा ग्रहखारुका सहजकालागी निक्षेप सुबिधा हरु उपलब्ध गरेका
+              छौ।
+            </p>
+            <!-- <a href="./services/deposit.html" class="no-link">
+                <button class="learn-more">थप पढ्नुहोस</button>
+              </a> -->
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="" />
+            </div>
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="" />
+            </div>
+          </div>
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">०२</span> कर्जा सुविधा
+            </p>
+            <p class="description">
+              हामीसंग शिक्षा ऋण, कृषि ऋण, हायर-परचेज ऋण लगाएत अन्य विभिन्न ऋण
+              विकल्पहरू प्रतिस्पर्धी ब्याज दरहरूमा उपलब्ध छन्।
+            </p>
+            <!-- <a href="./services/loan.html" class="no-link"
+                ><button class="learn-more">थप पढ्नुहोस</button></a
+              > -->
+          </div>
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">०३</span> रेमिटेन्स सेवा
+            </p>
+            <p class="description">
+              हामीसँग रेमिटेन्स सेवा पनि छ जसबाट तपाईले विश्वव्यापी रूपमा पैसा
+              प्राप्त र हाम्रो देश भित्र पैसा पथौन सक्नुहुन्छ।
+            </p>
+            <a href="./services/remittance.html" class="no-link"
+              ><button class="learn-more">थप पढ्नुहोस</button></a
+            >
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="" />
+            </div>
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="" />
+            </div>
+          </div>
+          <div class="services">
+            <p class="title-small"><span class="lable">०४</span>बचत सेवा</p>
+            <div class="description">
+              बज्रशाली संग तपाईले आफ्नो मेहनतको पैसा सजिलै बचत गर्न सक्नुहुन्छ।
+              हामी प्रतिस्पर्धी बजार दरहरूमा तपाईंको सुविधाको लागि विभिन्न बचत
+              विकल्पहरू प्रस्ताव गर्दछौं।
+            </div>
+          </div>
+
+          <div class="services">
+            <p class="title-small">
+              <span class="lable">०५</span> बिल भुक्तानी
+            </p>
+            <p class="description">
+              बिजुलीको बिल, पानीको बिल, टेलिफोनको बिल लगाएत विभिन्न बिलहरू सहज
+              रूपमा भुक्तानी गर्न सक्नुहुन्छ।
+            </p>
+            <!-- <a href="" class="no-link"
+                ><button class="learn-more">थप पढ्नुहोस</button></a
+              > -->
+          </div>
+          <div class="services">
+            <div class="img-center">
+              <img src="/images/temp.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="grid-child-footer">
+          <div class="about-office">
+            <div class="image-container">
+              <img src="./images/logo.svg" alt="logo" />
+            </div>
+            <div class="details">
+              <ol role="list">
+                <li><h2>Bajrashali Multipuprose Co-operative Ltd.</h2></li>
+                <li><p>Contact: 01-4450204, 4450063</p></li>
+                <li><p>Email: Bajrashali123@yahoo.com</p></li>
+              </ol>
+            </div>
+          </div>
+          <ol role="list">
+            <li class="bold">Quick Links</li>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">contact us</a></li>
+            <li><a href="./services/remittance.html">remittance</a></li>
+            <li><a href="./services/saving.html">Saving</a></li>
+          </ol>
+        </div>
+        <div class="grid-child-footer">
+          <p class="concern">
+            This website is in beta Feel free to
+            <a href="contact.html">Contact Us</a> if you have any concern
+            related to the website, bugs you may encounter, suggestions, or
+            anything in general about our buisness.
+          </p>
+        </div>
+        <div class="grid-child-footer">
+          <div class="map">
+            <h2>Visit Us</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742.4136958568846!2d85.46445840244566!3d27.73165240225363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb04ec92c15cbd%3A0xb5ce4c5e25f9782c!2sBajrashali%20Multipuprose%20Co-operative%20Ltd.!5e0!3m2!1sen!2snp!4v1674032307105!5m2!1sen!2snp"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

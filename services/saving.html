@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Saving Service</title>
+
+    <link rel="icon" href="../images/logo.svg" />
+
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/header.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/utility-classes.css" />
+    <link rel="stylesheet" href="../css/sidebar.css" />
+
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="../js/language-changer.js" defer></script>
+    <script src="../js/dark-mode-toggle.js" defer></script>
+    <script src="../js/sidebar.js" defer></script>
+  </head>
+  <body>
+    <header>
+      <section class="header">
+        <div class="header-left">
+          <img src="./images/logo.svg" alt="logo" class="logo" />
+          <p class="title-small">
+            Bajrashali Multipuprose Co-operative limited
+          </p>
+        </div>
+        <div class="header-right">
+          <a href="../index.html">Home</a>
+          <a href="../about.html">About</a>
+          <a href="../contact.html">Contact</a>
+
+          <button id="sidebar-button" onclick="openSidebar()">
+            <i class="fa-sharp fa-solid fa-bars"></i>
+          </button>
+        </div>
+      </section>
+      <div id="sidebar">
+        <button id="close-button" onclick="closeSidebar()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+        <div class="sidebar-quick-links">
+          <ol role="list">
+            <li class="bold">Quick Links</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">contact us</a></li>
+            <li><a href="../services/remittance.html">remittance</a></li>
+            <li><a href="">Saving</a></li>
+          </ol>
+        </div>
+        <div class="site-settings">
+          <p class="title">Site Settings</p>
+          <div class="setting">
+            <label for="language_switch" class="label-text">Nepali</label>
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="language_switch"
+                onchange="switchLanguage()"
+                checked
+              />
+              <span class="slider round"></span>
+            </label>
+            <label for="language_switch" class="label-text">English</label>
+          </div>
+          <div class="setting">
+            <label for="dark-mode-toggle" class="label-text">Dark Mode</label>
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="dark-mode-toggle"
+                onclick="toggleDarkMode()"
+              />
+              <span class="slider round"></span>
+            </label>
+            <label for="dark-mode-toggle" class="label-text">Light Mode</label>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- -------------------------------------- English ----------------------------------- -->
+    <!-- -------------------------------------- English ----------------------------------- -->
+    <!-- -------------------------------------- English ----------------------------------- -->
+
+    <main id="en">
+      <div class="content">
+        <p class="title">Saving Options</p>
+        <p class="description">
+          You can easily save your hard earned money with Bajrashali. we offer
+          various saving options for your convenience at competitive market
+          rates
+        </p>
+      </div>
+      <div class="savings-names-container">
+        <span>S.N</span> <span>savings</span> <span>1</span>
+        <span>Normal Saving</span> <span>2</span>
+        <span>5 year regular saving</span> <span>3</span>
+        <span>1 year fixed deposit</span> <span>4</span>
+        <span>2 year fixed deposit</span> <span>5</span>
+        <span>5 year fixed deposit</span> <span>6</span>
+        <span>Double Payment System</span> <span>7</span>
+        <span>Special shareholder accounts</span>
+      </div>
+    </main>
+
+    <!-- -------------------------------------- Nepali ----------------------------------- -->
+    <!-- -------------------------------------- Nepali ----------------------------------- -->
+    <!-- -------------------------------------- Nepali ----------------------------------- -->
+
+    <main id="np">
+      <div class="content">
+        <p class="title">बचत सेवा</p>
+        <p class="description">
+          बज्रशाली संग तपाईले आफ्नो मेहनतको पैसा सजिलै बचत गर्न सक्नुहुन्छ। हामी
+          प्रतिस्पर्धी बजार दरहरूमा तपाईंको सुविधाको लागि विभिन्न बचत विकल्पहरू
+          प्रस्ताव गर्दछौं।
+        </p>
+      </div>
+      <div class="savings-names-container">
+        <span>सि.नं.</span><span>बचत शीर्षक</span> <span>१</span
+        ><span> सामान्य बचत</span> <span>२</span
+        ><span>५ वर्षको नियमित बचत</span> <span>३</span
+        ><span>१ वर्षको फिक्स्ड डिपोजिट</span> <span>४</span
+        ><span>२ वर्षको फिक्स्ड डिपोजिट</span> <span>५</span
+        ><span>५ वर्षको फिक्स्ड डिपोजिट</span> <span>६</span
+        ><span>डबल भुक्तानी प्रणाली</span> <span>७</span
+        ><span>विशेष शेयरधारक खाताहरू</span>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="grid-child-footer">
+          <div class="about-office">
+            <div class="image-container">
+              <img src="../images/logo.svg" alt="logo" />
+            </div>
+            <div class="details">
+              <ol role="list">
+                <li><h2>Bajrashali Multipuprose Co-operative Ltd.</h2></li>
+                <li><p>Contact: 01-4450204, 4450063</p></li>
+                <li><p>Email: Bajrashali123@yahoo.com</p></li>
+              </ol>
+            </div>
+          </div>
+          <ol role="list">
+            <li class="bold">Quick Links</li>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../about.html">About Us</a></li>
+            <li><a href="../contact.html">contact us</a></li>
+            <li><a href="../services/remittance.html">remittance</a></li>
+            <li><a href="#">Saving</a></li>
+          </ol>
+        </div>
+        <div class="grid-child-footer">
+          <p class="concern">
+            This website is in beta Feel free to
+            <a href="../contact.html">Contact Us</a> if you have any concern
+            related to the website, bugs you may encounter, suggestions, or
+            anything in general about our buisness.
+          </p>
+        </div>
+        <div class="grid-child-footer">
+          <div class="map">
+            <h2>Visit Us</h2>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742.4136958568846!2d85.46445840244566!3d27.73165240225363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb04ec92c15cbd%3A0xb5ce4c5e25f9782c!2sBajrashali%20Multipuprose%20Co-operative%20Ltd.!5e0!3m2!1sen!2snp!4v1674032307105!5m2!1sen!2snp"
+              width="400"
+              height="300"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
