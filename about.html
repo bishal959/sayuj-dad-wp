@@ -4,279 +4,92 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Bajrashali</title>
-    <link rel="icon" href="./images/logo.svg" />
+    <title>About us</title>
 
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/header.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <link rel="stylesheet" href="./css/utility-classes.css" />
-    <link rel="stylesheet" href="./css/sidebar.css" />
-
+    <link rel="stylesheet" href="./style/style.css" />
     <script
       src="https://kit.fontawesome.com/385a42cb55.js"
       crossorigin="anonymous"
       defer
     ></script>
-
-    <script src="./js/language-changer.js" defer></script>
     <script src="./js/dark-mode-toggle.js" defer></script>
-    <script src="./js/sidebar.js" defer></script>
   </head>
   <body>
-    <header>
-      <section class="header">
-        <div class="header-left">
-          <img src="./images/logo.svg" alt="logo" class="logo" />
-          <p class="title-small">
-            Bajrashali Multipuprose Co-operative limited
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <h1>Bajrashali</h1>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="./contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="body-content margin">
+      <section id="abt-us-section-container">
+        <div class="abt-us-page-section">
+          <h3>About Us</h3>
+          <p>
+            We are the oldest Co-operative in Sankhu that provides a range of
+            financial services to our members. We offer a variety of saving
+            options, including personal savings accounts and fixed deposit
+            accounts, that provide competitive interest rates. We also provide
+            loan services, including personal loans and business loans, to help
+            our members achieve their financial goals. One of our specialties is
+            the remittance service, which allows our members to easily send and
+            receive money to and from anywhere in the world. We pride ourselves
+            on being a reliable and trustworthy financial partner for our
+            community and we look forward to serving you.
           </p>
         </div>
-        <div class="header-right">
-          <a href="index.html">Home</a>
-          <a href="about.html">About</a>
-          <a href="contact.html">Contact</a>
-
-          <button id="sidebar-button" onclick="openSidebar()">
-            <i class="fa-sharp fa-solid fa-bars"></i>
-          </button>
+        <div class="office-front-img-container">
+          <img src="./images/office-front.png" alt="office-front" />
         </div>
       </section>
-      <div id="sidebar">
-        <button id="close-button" onclick="closeSidebar()">
-          <i class="fa-solid fa-xmark"></i>
-        </button>
-        <div class="sidebar-quick-links">
-          <ol role="list">
-            <li class="bold">Quick Links</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">contact us</a></li>
-            <li><a href="./services/remittance.html">remittance</a></li>
-            <li><a href="./services/saving.html">Saving</a></li>
-          </ol>
-        </div>
-        <div class="site-settings">
-          <p class="title">Site Settings</p>
-          <div class="setting">
-            <label for="language_switch" class="label-text">Nepali</label>
-            <label class="switch">
-              <input
-                type="checkbox"
-                id="language_switch"
-                onchange="switchLanguage()"
-                checked
-              />
-              <span class="slider round"></span>
-            </label>
-            <label for="language_switch" class="label-text">English</label>
-          </div>
-          <div class="setting">
-            <label for="dark-mode-toggle" class="label-text">Dark Mode</label>
-            <label class="switch">
-              <input
-                type="checkbox"
-                id="dark-mode-toggle"
-                onclick="toggleDarkMode()"
-              />
-              <span class="slider round"></span>
-            </label>
-            <label for="dark-mode-toggle" class="label-text">Light Mode</label>
-          </div>
-        </div>
-      </div>
-    </header>
-    <!-- -------------------------------------- English ----------------------------------- -->
-    <!-- -------------------------------------- English ----------------------------------- -->
-    <!-- -------------------------------------- English ----------------------------------- -->
+      <hr id="seperator" />
 
-    <main id="en">
-      <div class="content">
-        <div class="abt-us-container">
-          <div class="abt-us">
-            <p class="title">About Us</p>
-            <p class="description">
-              We are the oldest organization in
-              <a href="https://goo.gl/maps/qzNj6847bX3P9YPTA" target="_blank"
-                >Sankhu</a
-              >
-              that provides a range of financial services to our members. We
-              offer a variety of saving options, including personal savings
-              accounts and fixed deposit accounts, that provide competitive
-              interest rates. We also provide loan services, including personal
-              loans and business loans, to help our members achieve their
-              financial goals. One of our specialties is the remittance service,
-              which allows our members to easily send and receive money to and
-              from anywhere in the world. We pride ourselves on being a reliable
-              and trustworthy financial partner for our community and we look
-              forward to serving you.
-            </p>
-          </div>
-          <div class="abt-us-fronthouse">
-            <img src="./images/office-front.png" alt="office-front" />
-          </div>
-        </div>
-      </div>
-
-      <section class="content">
-        <p class="title">Our Team</p>
-        <div class="office-team">
-          <div class="team-members">
-            <div class="team-image">
-              <img src="./images/staff/babin.jpg" alt="babin-staff" />
+      <section>
+        <h1 class="title-text-large">Our Team</h1>
+        <div id="our-team" class="margin">
+          <div class="team-member-container">
+            <div class="img-container">
+              <img src="./images/staff/babin.jpg" />
             </div>
-            <div class="team-details">
-              <h3>Babin Raj Shrestha</h3>
+            <div class="description-container">
+              <h3 class="team-name">Babin Shrestha</h3>
               <p>Chairman</p>
               <p>9841250278</p>
             </div>
           </div>
-          <div class="team-members">
-            <div class="team-image">
-              <img src="./images/staff/saroj.png" alt="saroj-staff" />
+          <div class="team-member-container">
+            <div class="img-container">
+              <img src="./images/staff/saroj.png" />
             </div>
-            <div class="team-details">
-              <h3>Saroj Kuickel</h3>
+            <div class="description-container">
+              <h3 class="team-name">Saroj Kuickel</h3>
               <p>Secretary</p>
               <p>9849266466</p>
             </div>
           </div>
-          <div class="team-members">
-            <div class="team-image">
-              <img src="./images/staff/rajesh.jpg" alt="rajesh-staff" />
+          <div class="team-member-container">
+            <div class="img-container">
+              <img src="./images/staff/rajesh.jpg" />
             </div>
-            <div class="team-details">
-              <h3>Rajesh Shrestha</h3>
+            <div class="description-container">
+              <h3 class="team-name">Rajesh Shrestha</h3>
               <p>Treasurer</p>
               <p>9851094607</p>
             </div>
           </div>
         </div>
       </section>
-      <div class="img-center">
-        <div class="abt-us-team">
-          <img src="./images/team.jpg" alt="team" />
-        </div>
-      </div>
     </main>
-
-    <!-- -------------------------------------- Nepali----------------------------------- -->
-    <!-- -------------------------------------- Nepali----------------------------------- -->
-    <!-- -------------------------------------- Nepali----------------------------------- -->
-    <main id="np">
-      <div class="content">
-        <div class="abt-us-container">
-          <div class="abt-us">
-            <p class="title">हाम्रो बारेमा</p>
-            <p class="description">
-              बज्रशाली
-              <a href="https://goo.gl/maps/qzNj6847bX3P9YPTA">साँखु</a>मा स्थित
-              एक सहकारी संस्था हो जसले बिगत २३ वर्ष देखि आफ्नो ग्राहक हरुलाई
-              सेवा गर्दै सबै को मन जित्न सफल भएको छहा। हाम्रा सेवाहरु मद्द्ये
-              निक्षेप सेवा, ऋण सेवा,रेमिट्यान्स लगाएत अन्य विभिन्न सेवा हरु
-              पर्दछन। हामी बज्रशाली बाट तपैले संसार को कुनै पनि ठाउँ बाट पैसा
-              पुन र देश भित्र को कुनै पनि ठाउँ मा पथौन सक्नु हुनेछ। हामी आफ्नो
-              ग्राहकहरुको लागि एक भरपर्दो वित्तीय संस्था भएकोमा गर्व गर्दछौ र
-              हामी तपाईंलाई सेवा गर्न पनि सद्दे तत्पर छौ।
-            </p>
-          </div>
-          <div class="abt-us">
-            <img src="./images/office-front.png" alt="office-front" />
-          </div>
-        </div>
-      </div>
-
-      <section class="content">
-        <p class="title">हाम्रो टिम</p>
-        <div class="office-team">
-          <div class="team-members">
-            <div class="team-image">
-              <img src="./images/staff/babin.jpg" alt="babin-staff" />
-            </div>
-            <div class="team-details">
-              <h3>बबिन राज श्रेष्ठ</h3>
-              <p>अध्यक्ष</p>
-              <p>९८४१२५०२७८</p>
-            </div>
-          </div>
-          <div class="team-members">
-            <div class="team-image">
-              <img src="./images/staff/saroj.png" alt="saroj-staff" />
-            </div>
-            <div class="team-details">
-              <h3>सरोज कुईकेल</h3>
-              <p>सचिव</p>
-              <p>९८४९२६६४६६</p>
-            </div>
-          </div>
-
-          <div class="team-members">
-            <div class="team-image">
-              <img src="./images/staff/rajesh.jpg" alt="rajesh-staff" />
-            </div>
-            <div class="team-details">
-              <h3>राजेश श्रेष्ठ</h3>
-              <p>कोषाध्यक्ष</p>
-              <p>९८५१०९४६०७</p>
-            </div>
-          </div>
-        </div>
-      </section>
-      <hr class="line" />
-      <div class="img-center">
-        <div class="abt-us-team">
-          <img src="./images/team.jpg" alt="team" />
-        </div>
-      </div>
-    </main>
-
-    <footer class="footer">
-      <div class="footer-content">
-        <div class="grid-child-footer">
-          <div class="about-office">
-            <div class="image-container">
-              <img src="./images/logo.svg" alt="logo" />
-            </div>
-            <div class="details">
-              <ol role="list">
-                <li><h2>Bajrashali Multipuprose Co-operative Ltd.</h2></li>
-                <li><p>Contact: 01-4450204, 4450063</p></li>
-                <li><p>Email: Bajrashali123@yahoo.com</p></li>
-              </ol>
-            </div>
-          </div>
-          <ol role="list">
-            <li class="bold">Quick Links</li>
-            <li><a href="#">Home</a></li>
-            <li><a href="about.html">About Us</a></li>
-            <li><a href="contact.html">contact us</a></li>
-            <li><a href="./services/remittance.html">remittance</a></li>
-            <li><a href="./services/saving.html">Saving</a></li>
-          </ol>
-        </div>
-        <div class="grid-child-footer">
-          <p class="concern">
-            This website is in beta Feel free to
-            <a href="contact.html">Contact Us</a> if you have any concern
-            related to the website, bugs you may encounter, suggestions, or
-            anything in general about our buisness.
-          </p>
-        </div>
-        <div class="grid-child-footer">
-          <div class="map">
-            <h2>Visit Us</h2>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d742.4136958568846!2d85.46445840244566!3d27.73165240225363!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb04ec92c15cbd%3A0xb5ce4c5e25f9782c!2sBajrashali%20Multipuprose%20Co-operative%20Ltd.!5e0!3m2!1sen!2snp!4v1674032307105!5m2!1sen!2snp"
-              width="400"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </div>
-      </div>
-    </footer>
+    <!-- <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()" />
+    <label for="dark-mode-toggle">Toggle</label> -->
   </body>
 </html>
