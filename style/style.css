@@ -157,7 +157,6 @@
   --size-1500: 15rem;
   --size-2000: 20rem;
 }
-
 :root:has(#dark-mode-toggle:checked) {
   --color-background-1: #fffbfe;
   --color-background-5: linear-gradient(
@@ -193,6 +192,8 @@
 
   --color-on-background: #1c1b1f;
 
+  --color-on-background-p: hsla(255, 7%, 11%, 0.9);
+
   --color-surface: #fffbfe;
   --color-on-surface: #1c1b1f;
 
@@ -202,10 +203,10 @@
   --color-border-1: #cac4d0;
   --color-border-2: #79747e;
 
-  --color-accent-1: #728afe;
-  --color-accent-2: #4864f7;
-  --color-accent-3: #2340e7;
-  --color-accent-4: #021ecf;
+  --color-accent-1: hsl(0, 99%, 72%);
+  --color-accent-2: hsl(0, 92%, 63%);
+  --color-accent-3: hsl(0, 80%, 52%);
+  --color-accent-4: hsl(0, 98%, 41%);
 
   --color-sel-bg: black;
   --color-sel-text: white;
@@ -308,7 +309,7 @@ select {
   );
   outline: 0;
   border: 0;
-  margin: var(--size-100) 0;
+  margin: var(--size-200) 0;
 }
 .counter {
   background-color: var(--color-accent-2);
@@ -316,13 +317,13 @@ select {
   font-size: var(--title-text-small);
   border-radius: 50%;
   margin-right: 0.5em;
-  text-shadow: 1px 1px 3px black;
+  text-shadow: 1px 1px 3px var(--color-border-1);
 }
 .learn-more-btn {
   border: 0;
 
   background: var(--color-learn-more-button);
-  color: var(--color-on-background);
+  color: white;
   padding: var(--size-50);
   border-radius: var(--size-50);
   box-shadow: var(--elevation-2);
@@ -450,7 +451,7 @@ nav {
   padding: var(--size-70) var(--size-50);
   border-radius: var(--size-50);
   border: 1px solid var(--color-border-1);
-  font-size: var(--step-0);
+  font-size: var(--label-text-small);
 }
 .nav-right ul a:hover {
   background: var(--color-background-8);
@@ -734,4 +735,51 @@ footer {
   .abt-us-section p {
     text-align: left;
   }
+}
+
+.switch input {
+  display: none;
+}
+
+.switch {
+  display: inline-block;
+  width: 60px; /*=w*/
+  height: 30px; /*=h*/
+  margin: 4px;
+  transform: translateY(50%);
+  position: relative;
+}
+
+.slider {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
+  box-shadow: 0 0 0 2px #777, 0 0 4px #777;
+  cursor: pointer;
+  border: 4px solid transparent;
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: #777;
+  border-radius: 30px;
+  transform: translateX(-30px); /*translateX(-(w-h))*/
+  transition: 0.2s;
+}
+
+input:checked + .slider:before {
+  transform: translateX(30px); /*translateX(w-h)*/
+  background-color: var(--color-accent-1);
+}
+
+input:checked + .slider {
+  box-shadow: 0 0 0 2px var(--color-accent-1), 0 0 8px var(--color-accent-1);
 }
