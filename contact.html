@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Remittance</title>
+    <link rel="icon" href="./images/logo.svg" />
+
+    <link rel="stylesheet" href="./style/style.css" />
+    <script
+      src="https://kit.fontawesome.com/385a42cb55.js"
+      crossorigin="anonymous"
+      defer
+    ></script>
+    <script src="./js/dark-mode-toggle.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <div class="nav-left">
+        <a href="index.html">
+          <img src="./images/logo.svg" alt="logo" />
+        </a>
+        <h1>Bajrashali</h1>
+      </div>
+      <div class="nav-right">
+        <ul>
+          <li><a href="./index.html">Home</a></li>
+          <li><a href="./about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <main class="body-content margin">
+      <section id="contact-us">
+        <div class="left-container-contact-us">
+          <h2>Bajrashali Contact Form</h2>
+          <div class="logo-container">
+            <img src="./images/logo.svg" alt="logo" />
+          </div>
+          <p>Contact us : 01-4450204, 4450063</p>
+          <p>Email <span>Bajrashali123@yahoo.com</span></p>
+        </div>
+        <div class="contact-us-container margin">
+          <h2 class="margin">Contact US</h2>
+          <form
+            action="https://formsubmit.co/7bfe420a00cd173495d580bf5d2de694"
+            method="POST"
+            class="form"
+          >
+            <input
+              type="text"
+              name="Name"
+              required
+              placeholder="Enter Your Name"
+            />
+            <input
+              type="email"
+              name="email"
+              required
+              placeholder="Enter Your Email"
+            />
+            <input
+              type="text"
+              name="number"
+              required
+              placeholder="Enter Your Contact Number"
+            />
+            <textarea
+              rows="5"
+              name="Comment"
+              placeholder="Enter your Comment"
+              style="resize: none"
+              required
+            ></textarea>
+            <input type="hidden" name="_captcha" value="false" />
+            <input type="hidden" name="_captcha" value="false" />
+            <input
+              type="hidden"
+              name="_next"
+              value="https://bajrashali.com.np"
+            />
+            <button type="submit">Submit</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer-container">
+        <div class="footer-item ftr-item-1">
+          <img src="./images/logo.svg" style="height: 5rem" />
+          <h3>Bajrashali Multipurpose Cooperative Ltd.</h3>
+          <p style="font-size: var(--step--1)">
+            Contact: 01-4450204, 4450063 <br />
+            Email: Bajrashali123@yahoo.com
+          </p>
+          <button
+            class="learn-more-btn"
+            onclick="window.location='./contact.html';"
+          >
+            Contact Us
+          </button>
+          <div class="margin">
+            <label class="switch">
+              <input
+                type="checkbox"
+                id="dark-mode-toggle"
+                onclick="toggleDarkMode()"
+              />
+              <span class="slider"></span>
+            </label>
+          </div>
+        </div>
+        <div class="footer-item ftr-item-2">
+          <h3>Visit Us</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.5322197642586!2d85.46238635045015!3d27.731725782697307!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb04ec92c15cbd%3A0xb5ce4c5e25f9782c!2sBajrashali%20Multipuprose%20Co-operative%20Ltd.!5e0!3m2!1sen!2snp!4v1679582419568!5m2!1sen!2snp"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </footer>
+    <!-- <input type="checkbox" id="dark-mode-toggle" onclick="toggleDarkMode()" />
+    <label for="dark-mode-toggle">Toggle</label> -->
+  </body>
+</html>
