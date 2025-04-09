@@ -1,238 +1,238 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bajrashali</title>
-    <link rel="stylesheet" type="text/css" href="./sass/style.css" />
+    <title>Bajrashali Multipurpose Co-operative Ltd</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 
+    <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/385a42cb55.js"
       crossorigin="anonymous"
-      defer
+      defer=""
     ></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              text: "#090504",
+              background: "#ffffff",
+              primary: "#d23a2f",
+              secondary: "#f08078",
+              accent: "#fb584c",
+            },
+          },
+        },
+      };
+    </script>
   </head>
-  <body>
-    <main class="page-container">
-      <div class="sidebar">
-        <div class="sidebar-top">
-          <h1>Bajrashali Multipurpose Coopreative Limited.</h1>
-          <ul class="sidebar-index">
-            <li class="index active"><a href="#about-us">About Us!</a></li>
-            <li class="index"><a href="#our-services">Our Services!</a></li>
-            <li class="index"><a href="#contact-us">Contact Us!</a></li>
-          </ul>
-        </div>
-        <div class="sidebar-bottom">
-          <div class="social-icon-container">
-            <a
-              href="https://www.facebook.com/BajrasaliMultipurpose"
-              target="_blank"
-              ><i class="fa-brands fa-facebook"></i
-            ></a>
-            <div class="email-container">
-              <i class="fa-solid fa-envelope"></i>
-              <span>Bajrashali123@yahoo.com</span>
-            </div>
-          </div>
-          <span class="privacy">
-            &copy; Bajrashali Multipurpose Coopreative Limited
-          </span>
-        </div>
-      </div>
-      <div class="main-content">
-        <!-- page 1 -->
-        <section id="about-us" class="page1">
-          <div>
-            <div class="logo-container">
-              <img src="./images/logo.svg" alt="logo" class="bajra-logo" />
-              <h2>Bajrashali Multipurpose Coopreative Limited</h2>
-            </div>
-            <div class="about-us-container">
-              <h2 class="_heading-text">About Us!</h2>
-              <p class="desc-mobile">
-                We are a goodwill financial organization that provides a variety
-                of services to our customers such as savings and credit at
-                competitive rates. We can receive funds world wide and receive
-                within our own country. We are Sankhu's oldest and most trusted
-                organization.
-              </p>
-              <p class="desc-desktop">
-                We are the oldest Co-operative in Sankhu that provides a range
-                of financial services to our members. We offer a variety of
-                saving options, including personal savings accounts and fixed
-                deposit accounts, that provide competitive interest rates. We
-                also provide loan services, including personal loans and
-                business loans, to help our members achieve their financial
-                goals. One of our specialties is the remittance service, which
-                allows our members to easily send and receive money to and from
-                anywhere in the world. We pride ourselves on being a reliable
-                and trustworthy financial partner for our community and we look
-                forward to serving you.
-              </p>
-            </div>
-            <div class="heart-container">
-              <div>
-                <span class="__number1">2</span>
-                <span class="__number2">3</span>
-                <span class="__text">years of service</span>
-              </div>
-              <img src="./images/svgs/love-heart.svg" alt="heart" />
-            </div>
-          </div>
-        </section>
-        <hr id="line" />
-        <!-- page 2 -->
-        <section id="our-services" class="page2">
-          <div>
-            <p class="_heading-text">Our Services!</p>
-            Our Goal is to provide excellent services to all of our customers.
-            We are working tirelessly to provide this to all.
-          </div>
-          <div class="services-container">
-            <!-- deposit-->
-            <div class="service">
-              <h3>Deposit</h3>
-              <p>
-                We have various deposit options available to our customers for
-                their convenience and time savings.
-              </p>
-              <div class="discount-image-container">
-                <span>Highest Market Rates! </span>
-                <img
-                  src="./images/svgs/discount.svg"
-                  class="discount-image"
-                  alt="discount"
-                />
-              </div>
-            </div>
-            <!-- loan-->
-            <div class="service relative">
-              <h3>loan</h3>
-              <p>
-                we have many loan options availabe for our customers like
-                education loan, agriculture loan, hire-purchase loan and much
-                more at competitive intrest rates.
-              </p>
-              <a href="#contact-us">
-                <button class="contact-us-btn">Contact Us!</button></a
-              >
-            </div>
-            <!-- remittance-->
-            <div class="service">
-              <h3>Remittance</h3>
-              <p>
-                Remittances are a crucial aspect for banks, particularly in
-                Nepal. we offer remittance services to our members for receiving
-                funds from various parts of the world and sending anywhere
-                within the country. we offer best, Safe and reliable service at
-                lowest fees.
-              </p>
-            </div>
-            <!-- saving-->
-            <div class="service">
-              <h3>Saving And Credit</h3>
-              <p>
-                We offer various saving options for our customers. easily save
-                your hard earned cash at competitive rates.
-              </p>
-            </div>
-          </div>
-          <div class="image-container">
-            <img src="./images/svgs/key-points.svg" alt="key-points" />
-          </div>
-        </section>
-        <hr id="line" />
-        <!-- page 3 -->
-        <section id="contact-us" class="page3">
-          <p class="_heading-text">Contact Us!</p>
-          <div class="grid-container">
-            <div class="company-details">
-              <ul role="list">
-                <li>
-                  <span class="text-highlight">Call Us:</span>01-4450204,
-                  4450063
-                </li>
-                <li>
-                  <span class="text-highlight">Email: </span>
-                  Bajrashali123@yahoo.com
-                </li>
-              </ul>
-              <img src="./images/svgs/contact us.svg" alt="contact us" />
-            </div>
-            <div class="contact-form">
-              <form
-                action="https://formsubmit.co/7bfe420a00cd173495d580bf5d2de694"
-                method="POST"
-                class="form"
-              >
-                <div class="_row row1">
-                  <input
-                    required
-                    type="text"
-                    placeholder="First Name"
-                    name="Fname"
-                  />
-                  <input
-                    required
-                    type="text"
-                    placeholder="Last Name"
-                    name="Lname"
-                  />
-                </div>
-                <div class="_row row2">
-                  <input
-                    required
-                    type="email"
-                    placeholder="Email"
-                    name="email"
-                  />
-                </div>
-                <div class="_row row3">
-                  <input
-                    required
-                    type="text"
-                    placeholder="Phone Number"
-                    name="number"
-                  />
-                </div>
-                <div class="_row row4">
-                  <textarea
-                    required
-                    name="comment"
-                    placeholder="Your Comment"
-                    cols="30"
-                    rows="10"
-                    style="resize: none"
-                  ></textarea>
-                </div>
-                <div class="_row">
-                  <input type="hidden" name="_captcha" value="false" />
-                  <input type="hidden" name="_captcha" value="false" />
-                </div>
-                <div class="_btn-row">
-                  <button>SUBMIT</button>
-                </div>
-              </form>
-            </div>
-          </div>
-          <div class="map-container">
-            <i class="fa-solid fa-map"></i>
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.536829437451!2d85.46192157514844!3d27.731583524422728!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb04ec92c15cbd%3A0xb5ce4c5e25f9782c!2sBajrashali%20Multipuprose%20Co-operative%20Ltd.!5e0!3m2!1sen!2snp!4v1684427576394!5m2!1sen!2snp"
-              width="400"
-              height="300"
-              style="border: 0"
-              allowfullscreen=""
-              loading="lazy"
-              referrerpolicy="no-referrer-when-downgrade"
-            ></iframe>
-          </div>
-        </section>
-      </div>
-    </main>
 
-    <script src="script.js"></script>
+  <body class="bg-background text-text">
+    <header class="bg-neutral-100 shadow">
+      <div
+        class="container mx-auto px-5 py-2 flex items-center gap-2 justify-between"
+      >
+        <div class="flex items-center gap-1">
+          <a href="/index.html" class="flex items-center gap-2">
+            <img
+              src="/assets/logo.svg"
+              class="w-24 aspect-square mix-blend-multiply"
+              alt="Logo"
+            />
+
+            <h3 class="text-2xl hidden md:block font-serif">
+              Bajrashali Co-opreative
+            </h3>
+          </a>
+        </div>
+
+        <ul
+          id="nav-items"
+          class="hidden md:flex items-center gap-1 text-lg"
+        ></ul>
+
+        <button class="md:hidden text-2xl" id="mob-open-btn">
+          <i class="fa-solid fa-bars"></i>
+        </button>
+      </div>
+
+      <section
+        id="mobile-menu"
+        class="fixed top-0 left-0 w-screen h-screen bg-neutral-100 p-6 hidden z-50"
+      >
+        <div class="flex items-center justify-between">
+          <a href="/index.html">
+            <img
+              src="/assets/logo.svg"
+              class="w-24 aspect-square mix-blend-multiply"
+              alt="Logo"
+            />
+          </a>
+
+          <button class="text-2xl" id="mob-close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </button>
+        </div>
+
+        <ul id="nav-items-mobile" class="flex flex-col gap-1 text-lg"></ul>
+      </section>
+    </header>
+
+    <!--  -->
+    <section id="hero-section" class="h-[80vh] bg-neutral-800 relative">
+      <img
+        src="/assets/hero-home.jpg"
+        class="w-full h-full object-cover"
+        alt=""
+      />
+      <div class="absolute top-0 left-0 w-full h-full bg-primary/5">
+        <!-- <div class="container mx-auto px-5 grid grid-cols-1 md:grid-cols-2">
+          <div class=""></div>
+        </div> -->
+
+        <div
+          class="container mx-auto px-5 h-full flex justify-center items-center flex-col"
+        >
+          <h1 class="text-3xl lg:text-5xl text-center font-bold mb-6">
+            25 Years of <br />
+            Financial services in Sankhu
+          </h1>
+          <p class="text-xl text-center">
+            Your reliable partner in savings, loans, and remittance services.
+          </p>
+
+          <a href="/contact-us.html">
+            <button
+              class="mt-8 text-lg bg-primary px-8 py-4 rounded-2xl font-semibold text-white hover:bg-primary/75 transition-all"
+            >
+              Visit Us
+            </button></a
+          >
+        </div>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section class="my-24">
+      <div class="container mx-auto px-5 mt-16">
+        <h3 class="text-4xl font-semibold mb-6 font-serif text-center">
+          About Bajrashali
+        </h3>
+        <p class="text-lg max-w-[82ch] text-center mx-auto mb-8">
+          We are the oldest Co-operative in Sankhu, helping our community for
+          more than 25 years with simple financial services. We have saving
+          options like personal savings accounts and fixed deposit accounts with
+          good interest rates. We also give loans, such as personal loans and
+          business loans, to help our members reach their money goals. One
+          special service is our remittance, which makes it easy to send and
+          receive money from anywhere in the world. We are a trusted and
+          friendly partner for your finances, and we are happy to serve you!
+        </p>
+
+        <a href="/about-us.html" class="w-fit mx-auto block">
+          <button
+            class="text-lg border border-primary hover:bg-primary px-8 py-4 rounded-2xl font-semibold hover:text-white transition-all"
+          >
+            Learn More
+          </button>
+        </a>
+      </div>
+    </section>
+    <!--  -->
+
+    <!--  -->
+    <section id="download-calander" class="py-24 my-24 bg-neutral-200">
+      <div class="container mx-auto px-5 flex items-center justify-between">
+        <h3 class="text-3xl font-serif">Download Our calendar for BS. 2082</h3>
+
+        <a href="/assets/calendar-2082.pdf" target="_blank">
+          <button
+            class="text-lg bg-primary px-8 py-4 rounded-2xl font-semibold text-white hover:bg-primary/75 transition-all"
+          >
+            Download
+          </button></a
+        >
+      </div>
+    </section>
+    <!--  -->
+
+    <footer class="bg-neutral-100 -shadow">
+      <div
+        class="container pt-8 pb-4 px-5 mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3"
+      >
+        <div class="">
+          <a href="/index.html">
+            <img
+              src="/assets/logo.svg"
+              class="w-24 aspect-square mix-blend-multiply"
+              alt="Logo"
+            />
+          </a>
+          <h3 class="text-2xl font-serif">
+            Bajrashali Multipurpose
+            <br />
+            Coopreative Limited.
+          </h3>
+          <p>Sankhu, Kathmandu</p>
+
+          <p class="mt-4">
+            We are the oldest co-operative in Sankhu, offering savings, loans,
+            and global remittance services with competitive rates and trusted
+            community support.
+          </p>
+
+          <p class="mt-4">Pan No.: 302834341</p>
+          <p class="mt-1">Registration No.: 713</p>
+        </div>
+
+        <div class="mt-4">
+          <h3 class="text-xl mb-3 font-serif font-bold">Quick Links</h3>
+          <ul
+            id="nav-items-footer"
+            class="flex flex-col gap-2 list-disc ml-6"
+          ></ul>
+        </div>
+
+        <div class="mt-4">
+          <h3 class="text-xl mb-3 font-serif font-bold">Visit Us</h3>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3531.5358184518454!2d85.46193001141344!3d27.731614724320643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb04ec92c15cbd%3A0xb5ce4c5e25f9782c!2sBajrashali%20Multipuprose%20Co-operative%20Ltd.!5e0!3m2!1sen!2snp!4v1744206698532!5m2!1sen!2snp"
+            width="400"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            class="w-full"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+
+      <p class="text-center py-8">
+        <span>
+          &copy; Bajrashali Multipurpose Co-operative Ltd
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </span>
+
+        <i class="fa-solid fa-circle scale-50 text-primary"></i>
+
+        <span>
+          Made By
+          <a
+            href="https://sayuj.com.np"
+            target="_blank"
+            class="hover:text-primary"
+            >Sayuj</a
+          >
+        </span>
+      </p>
+    </footer>
+
+    <script src="/script/headerItems.js"></script>
   </body>
 </html>
